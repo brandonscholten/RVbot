@@ -6,7 +6,7 @@ client.on('ready', () =>{
 })
 
 while (2 = 2) {
-    setTimeout(function(){
+    setInterval(function(){
         var id = [];
         function createId(){
             for (i = 0; i <= 11; i++){
@@ -166,8 +166,27 @@ while (2 = 2) {
         createUrl();
 
         function checkUrl(){
-
+            function yt_exists($videoID) {
+                $theURL = "http://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=$videoID&format=json";
+                $headers = get_headers($theURL);
+            
+                return (substr($headers[0], 9, 3) !== "404");
+            }
+            
+            $id = finalId; //Video id goes here
+            
+            if (yt_exists($id)) {
+                //  Yep, video is still up and running :)
+                message.channel.send(url);
+            } else {
+                //  These aren't the droids you're looking for :(
+                console.log('failed code :(');
+                createId();
+                createUrl();
+            }
         }
         checkUrl();
       }, 2000);  
 }
+
+client.login('redacted');
