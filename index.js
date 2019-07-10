@@ -5,151 +5,215 @@ client.on('ready', () =>{
     console.log('I am ready!');
 })
 
-while (2 = 2) {
-    setInterval(function(){
+    //setInterval(function(){
+        console.log('set interval is working!');
         var id = [];
+        console.log('id variable reset');
         function createId(){
-            for (i = 0; i <= 11; i++){
+            for (i = 0; i <= 10; i++){
                 charType = Math.floor((Math.random() * 3) + 1);
-
-                if (charType === 1){
+                console.log('1-3 random generation result is:', charType);
+                if (charType == 1){
                     //generate a random number between 0 and 9
                     var num = Math.floor((Math.random() * 9) + 0);
-
-                    if (num === 0){
+                    console.log('random number is:',num);
+                    if (num == 0){
                         id[i] = 0;
-                    } else if (num === 1){
+                        console.log('id',i,'is:',num);
+                    } else if (num == 1){
                         id[i] = 1;
-                    } else if (num === 2){
+                        console.log('id',i,'is:',num);
+                    } else if (num == 2){
                         id[i] = 2;
-                    } else if (num === 3){
+                        console.log('id',i,'is:',num);
+                    } else if (num == 3){
                         id[i] = 3;
-                    } else if (num === 4){
+                        console.log('id',i,'is:',num);
+                    } else if (num == 4){
                         id[i] = 4;
-                    } else if (num === 5){
+                        console.log('id',i,'is:',num);
+                    } else if (num == 5){
                         id[i] = 5;
-                    } else if (num === 6){
+                        console.log('id',i,'is:',num);
+                    } else if (num == 6){
                         id[i] = 6;
-                    } else if (num === 7){
+                        console.log('id',i,'is:',num);
+                    } else if (num == 7){
                         id[i] = 7;
-                    } else if (num === 8){
+                        console.log('id',i,'is:',num);
+                    } else if (num == 8){
                         id[i] = 8;
-                    } else if (num === 9){
+                        console.log('id',i,'is:',num);
+                    } else if (num == 9){
                         id[i] = 9;
+                        console.log('id',i,'is:',num);
                     }
-                } else if (charType === 2){
+                } else if (charType == 2){
                     //generate a random capital letter
                     var cap = Math.floor((Math.random() * 26) + 1);
-
-                    if (cap === 1){
+                    console.log('random number is',cap);
+                    if (cap == 1){
                         id[i] = 'A';
-                    } else if (cap === 2){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 2){
                         id[i] = 'B';
-                    } else if (cap === 3){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 3){
                         id[i] = 'C';
-                    } else if (cap === 4){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 4){
                         id[i] = 'D';
-                    } else if (cap === 5){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 5){
                         id[i] = 'E';
-                    } else if (cap === 6){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 6){
                         id[i] = 'F';
-                    } else if (cap === 7){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 7){
                         id[i] = 'G';
-                    } else if (cap === 8){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 8){
                         id[i] = 'H';
-                    } else if (cap === 9){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 9){
                         id[i] = 'I';
-                    } else if (cap === 10){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 10){
                         id[i] = 'J';
-                    } else if (cap === 11){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 11){
                         id[i] = 'K';
-                    } else if (cap === 12){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 12){
                         id[i] = 'L';
-                    } else if (cap === 13){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 13){
                         id[i] = 'M';
-                    } else if (cap === 14){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 14){
                         id[i] = 'N';
-                    } else if (cap === 15){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 15){
                         id[i] = 'O';
-                    } else if (cap === 16){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 16){
                         id[i] = 'P';
-                    } else if (cap === 17){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 17){
                         id[i] = 'Q';
-                    } else if (cap === 18){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 18){
                         id[i] = 'R';
-                    } else if (cap === 19){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 19){
                         id[i] = 'S';
-                    } else if (cap === 20){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 20){
                         id[i] = 'T';
-                    } else if (cap === 21){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 21){
                         id[i] = 'U';
-                    } else if (cap === 22){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 22){
                         id[i] = 'V';
-                    } else if (cap === 23){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 23){
                         id[i] = 'W';
-                    } else if (cap === 24){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 24){
                         id[i] = 'X';
-                    } else if (cap === 25){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 25){
                         id[i] = 'Y';
-                    } else if (cap === 26){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (cap == 26){
                         id[i] = 'Z';
+                        console.log('id',i,'is:',id[i]);
                     }
-                } else if (charType === 3){
+                } else if (charType == 3){
                     //generate a random lowercase letter
                     var lower = Math.floor((Math.floor() * 26) + 1);
+                    console.log('random number is',lower);
                     //after generating random character set it equal to id[i]
-                    if (lower === 1){
+                    if (lower == 1){
                         id[i] = 'a';
-                    } else if (lower === 2){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 2){
                         id[i] = 'b';
-                    } else if (lower === 3){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 3){
                         id[i] = 'c';
-                    } else if (lower === 4){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 4){
                         id[i] = 'd';
-                    } else if (lower === 5){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 5){
                         id[i] = 'h';
-                    } else if (lower === 6){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 6){
                         id[i] = 'i';
-                    } else if (lower === 7){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 7){
                         id[i] = 'j';
-                    } else if (lower === 8){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 8){
                         id[i] = 'k';
-                    } else if (lower === 9){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 9){
                         id[i] = 'l';
-                    } else if (lower === 10){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 10){
                         id[i] = 'm';
-                    } else if (lower === 11){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 11){
                         id[i] = 'n';
-                    } else if (lower === 12){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 12){
                         id[i] = 'o';
-                    } else if (lower === 13){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 13){
                         id[i] = 'p';
-                    } else if (lower === 14){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 14){
                         id[i] = 'q';
-                    } else if (lower === 15){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 15){
                         id[i] = 'r';
-                    } else if (lower === 16){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 16){
                         id[i] = 's';
-                    } else if (lower === 17){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 17){
                         id[i] = 't';
-                    } else if (lower === 18){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 18){
                         id[i] = 'u';
-                    } else if (lower === 19){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 19){
                         id[i] = 'v';
-                    } else if (lower === 20){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 20){
                         id[i] = 'w';
-                    } else if (lower === 21){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 21){
                         id[i] = 'x';
-                    } else if (lower === 22){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 22){
                         id[i] = 'y';
-                    } else if (lower === 23){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 23){
                         id[i] = 'z';
-                    } else if (lower === 24){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 24){
                         id[i] = 'e';
-                    } else if (lower === 25){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 25){
                         id[i] = 'f';
-                    } else if (lower === 26){
+                        console.log('id',i,'is:',id[i]);
+                    } else if (lower == 26){
                         id[i] = 'g';
+                        console.log('id',i,'is:',id[i]);
                     }
                 }
             }
@@ -157,36 +221,38 @@ while (2 = 2) {
         createId();
 
         var url = '';
-
+        console.log('url variable is reset!');
         var finalId = id.toString();
-
+        console.log('final id is:',finalId);
         function createUrl(){
             url = 'https://www.youtube.com/watch?v=' + finalId;
+            console.log('URL created:',url);
         }
         createUrl();
 
         function checkUrl(){
-            function yt_exists($videoID) {
-                $theURL = "http://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=$videoID&format=json";
-                $headers = get_headers($theURL);
-            
-                return (substr($headers[0], 9, 3) !== "404");
-            }
-            
-            $id = finalId; //Video id goes here
-            
-            if (yt_exists($id)) {
-                //  Yep, video is still up and running :)
-                message.channel.send(url);
-            } else {
-                //  These aren't the droids you're looking for :(
-                console.log('failed code :(');
-                createId();
-                createUrl();
-            }
+            console.log('checking url...');
+var http = require('http');
+
+function isValidYoutubeID(finalId) {
+  var options = {
+    method: 'HEAD',
+    host: 'img.youtube.com',
+    path: '/vi/' + finalId + '/0.jpg'
+  };
+
+  var req = http.request(options, function(res) {
+    if (res.statusCode == 200){
+        console.log("Valid Youtube ID");
+    } else {
+        console.log("Invalid Youtube ID");
+    }
+  });
+
+  req.end();
+}
         }
         checkUrl();
-      }, 2000);  
-}
+      //}, 15000);  
 
 client.login('redacted');
